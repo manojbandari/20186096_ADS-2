@@ -13,7 +13,7 @@ class PageRank {
 		double p = pageRank[v];
 		//double finalpageRank=0;
 		for(int i = 0; i < 1000; i++) {
-			for(int j=0; j<d.V();j++)
+			for(int j=0; j<d.V();j++) {
 				for (int a: d.adj(j)) {
 					if(d.outdegree(a)==0) {
 						return 0;
@@ -22,6 +22,7 @@ class PageRank {
 					//finalpageRank+=p;
 				}
 			}
+		}
 		return p;
 	}
 	public String toString() {
