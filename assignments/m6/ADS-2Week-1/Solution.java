@@ -12,12 +12,13 @@ class PageRank {
 	double getPR(int v) {
 		double p = pageRank[v];
 		//double finalpageRank=0;
-		for(int j = 0; j < 1000; j++) {
-				for (int i: d.adj(v)) {
-					if(d.outdegree(i)==0) {
+		for(int i = 0; i < 1000; i++) {
+			for(int j=0; j<d.V();j++)
+				for (int a: d.adj(j)) {
+					if(d.outdegree(a)==0) {
 						return 0;
 					}
-					p = pageRank[i]/d.outdegree(i);
+					p = pageRank[a]/d.outdegree(a);
 					//finalpageRank+=p;
 				}
 			}
