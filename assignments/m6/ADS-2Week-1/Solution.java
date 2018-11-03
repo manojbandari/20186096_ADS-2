@@ -11,17 +11,17 @@ class PageRank {
 	}
 	double getPR(int v) {
 		double p = pageRank[v];
-		//double finalpageRank=0;
+		double finalpageRank=0;
 		for(int j = 0; j <= 1000; j++) {
 				for (int i: d.adj(v)) {
 					if(d.outdegree(i)==0) {
 						return 0;
 					}
 					p = pageRank[i]/d.outdegree(i);
-					//finalpageRank+=p;
+					finalpageRank+=p;
 				}
 			}
-		return p;
+		return finalpageRank;
 	}
 	public String toString() {
 		String str = "";

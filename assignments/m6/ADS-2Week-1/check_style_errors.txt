@@ -295,13 +295,17 @@ Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:5:26: 'd' hides a field. [HiddenField]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:12:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:12:22: Parameter v should be final. [FinalParameters]
-[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:15:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:14:37: '=' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:14:38: '=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:15:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:15:37: '1000' is a magic number. [MagicNumber]
-[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:17:43: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:17:43: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:17:58: '==' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:17:60: '==' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:20:56: '/' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:20:57: '/' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:21:54: '+=' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:21:56: '+=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:26:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:37: Missing a Javadoc comment. [JavadocType]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:38:17: Missing a Javadoc comment. [JavadocMethod]
@@ -315,7 +319,7 @@ Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:49: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:58:35: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:58:36: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:59:28: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:59:28: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:59:34: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:59:35: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:59:37: ';' is not followed by whitespace. [WhitespaceAfter]
@@ -329,7 +333,7 @@ Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:73:47: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:75: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 45 errors.
+Checkstyle ends with 49 errors.
 Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
