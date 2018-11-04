@@ -6,7 +6,7 @@ class PageRank {
 		this.d = d;
 		pageRank = new double[d.V()];
 		for (int i = 0; i < pageRank.length; i++) {
-			pageRank[i] = 1 / d.V();
+			pageRank[i] = 1.0 / d.V();
 		}
 	}
 	double getPR(int v) {
@@ -18,9 +18,12 @@ class PageRank {
 					if(d.outdegree(a)==0) {
 						return 0;
 					}
-					if(a==j) {
+					if(a!=j) {
 					p += pageRank[j]/d.outdegree(j);
 					//finalpageRank+=p;
+					if(a==j) {
+						break;
+					}
 				}
 				}
 			}
