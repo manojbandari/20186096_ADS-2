@@ -122,3 +122,4 @@ class Percolation {
         return cc.connected(first, last);
     }
 }
+
