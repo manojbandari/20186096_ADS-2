@@ -307,13 +307,10 @@ Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:18:58: '==' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:18:60: '==' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:21:43: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:21:45: '!=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:21:47: '!=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:21:45: '==' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:21:47: '==' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:22:57: '/' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:22:58: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:24:43: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:24:45: '==' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:24:47: '==' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:33:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:44: Missing a Javadoc comment. [JavadocType]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:45:17: Missing a Javadoc comment. [JavadocMethod]
@@ -341,7 +338,7 @@ Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:80:47: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Solution.java:82: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 57 errors.
+Checkstyle ends with 54 errors.
 Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\20186096_ADS-2\assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
