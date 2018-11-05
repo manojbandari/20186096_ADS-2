@@ -1,4 +1,4 @@
-/**.
+﻿/**.
  * Class for digraph.
  */
 class Digraph {
@@ -164,3 +164,4 @@ class Digraph {
         return s.toString();
     }
 }
+
