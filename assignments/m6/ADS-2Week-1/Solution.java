@@ -4,7 +4,7 @@ class PageRank {
 	Digraph d;
 	Digraph rev;
 	PageRank(Digraph g) {
-		d = g;
+		this.d = g;
 		pagerank = new Double[g.V()];
 		rev = d.reverse();
 		cal();
@@ -35,33 +35,6 @@ class PageRank {
 	double getPR(int v) {
 		return pagerank[v];
 	}
-	/*Digraph d;
-	double[] pageRank;
-	PageRank(Digraph d) {
-		this.d = d;
-		pageRank = new double[d.V()];
-		for (int i = 0; i < pageRank.length; i++) {
-			pageRank[i] = 1.0 / d.V();
-		}
-	}
-	double getPR(int v) {
-		double p = pageRank[v];
-		//double finalpageRank=0;
-		for(int i = 0; i < 1000; i++) {
-			for(int j=0; j<d.V();j++) {
-				for (int a: d.adj(j)) {
-					if(d.outdegree(a)==0) {
-						return 0;
-					}
-					if(a==j) {
-					p += pageRank[j]/d.outdegree(j);
-					//finalpageRank+=p;
-				}
-				}
-			}
-		}                                           
-		return p;
-	}*/
 	public String toString() {
 		String str = "";
 		str += d + "\n";
@@ -100,7 +73,18 @@ public class Solution {
 			}
 		}
 
-		//System.out.pageRankintln(d);
+		System.out.println(d);
+		for (int i = 0; i < vertices; i++) {
+			if (d.outdegree(i) == 0) {
+				for (int j = 0; j < vertices; j++) {
+					if (i != j) {
+						d.addEdge(i, j);
+					}
+				}
+			}
+
+		}
+		
 		// Create page rank object and pass the Digraph ``object to the constructor
 		PageRank p= new PageRank(d);
 		// pageRankint the page rank object
