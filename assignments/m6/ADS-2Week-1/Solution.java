@@ -1,6 +1,41 @@
 import java.util.Scanner;
 class PageRank {
+	Double[] pagerank;
 	Digraph d;
+	Digraph rev;
+	PageRank(Digraph g) {
+		d = g;
+		pagerank = new Double[g.V()];
+		rev = d.reverse();
+		cal();
+	}
+	public void cal() {
+		Double pr = 0.0;
+		for (int i = 0; i < d.V(); i++) {
+			if (d.indegree(i) == 0) {
+				pagerank[i] = 0.0;
+			} else {
+				pagerank[i] = 1 / (double)d.V();
+			}
+		}
+		double[] l = new double[d.V()];
+		for ( int j = 0; j < 1000; j++) {
+			for ( int i = 0; i < d.V(); i++) {
+				pr = 0.0000;
+				for (int each : rev.adj(i)) {
+					pr += ((double)pagerank[each] / (double)d.outdegree(each));
+				}
+				l[i] = pr;
+			}
+			for (int i = 0; i < d.V(); i++) {
+				pagerank[i] = l[i];
+			}
+		}
+	}
+	double getPR(int v) {
+		return pagerank[v];
+	}
+	/*Digraph d;
 	double[] pageRank;
 	PageRank(Digraph d) {
 		this.d = d;
@@ -21,15 +56,12 @@ class PageRank {
 					if(a==j) {
 					p += pageRank[j]/d.outdegree(j);
 					//finalpageRank+=p;
-					/*if(a==j) {
-						break;
-					}*/
 				}
 				}
 			}
-		}
+		}                                           
 		return p;
-	}
+	}*/
 	public String toString() {
 		String str = "";
 		str += d + "\n";
@@ -59,7 +91,7 @@ public class Solution {
 
 		// iterate count of vertices times
 		// to read the adjacency list from std input
-		// and build the graph
+		// and build the Digraph
 		Digraph d = new Digraph(vertices);
 		for (int i = 0; i <= vertices; i++) {
 			String[] s=scan.nextLine().split(" ");
@@ -69,7 +101,7 @@ public class Solution {
 		}
 
 		//System.out.pageRankintln(d);
-		// Create page rank object and pass the graph ``object to the constructor
+		// Create page rank object and pass the Digraph ``object to the constructor
 		PageRank p= new PageRank(d);
 		// pageRankint the page rank object
 		System.out.println(p);
