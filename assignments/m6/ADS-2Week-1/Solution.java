@@ -73,7 +73,7 @@ public class Solution {
 			}
 		}
 
-		System.out.println(d);
+		//System.out.println(d);
 		for (int i = 0; i < vertices; i++) {
 			if (d.outdegree(i) == 0) {
 				for (int j = 0; j < vertices; j++) {
