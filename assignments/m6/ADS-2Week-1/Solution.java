@@ -37,8 +37,7 @@ class PageRank {
 	}
 	public String toString() {
 		String str = "";
-		str += d + "\n";
-		for (int i = 0; i < d.V(); i++) {
+		for (int i = 0; i < pagerank.length; i++) {
 			str += i + " - " + getPR(i) + "\n";
 		}
 		return str;
