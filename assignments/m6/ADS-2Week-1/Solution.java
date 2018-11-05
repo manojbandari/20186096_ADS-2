@@ -18,17 +18,17 @@ class PageRank {
 				pagerank[i] = 1 / (double)d.V();
 			}
 		}
-		double[] l = new double[d.V()];
+		double[] a = new double[d.V()];
 		for ( int j = 0; j < 1000; j++) {
 			for ( int i = 0; i < d.V(); i++) {
 				pr = 0.0000;
 				for (int each : rev.adj(i)) {
 					pr += ((double)pagerank[each] / (double)d.outdegree(each));
 				}
-				l[i] = pr;
+				a[i] = pr;
 			}
 			for (int i = 0; i < d.V(); i++) {
-				pagerank[i] = l[i];
+				pagerank[i] = a[i];
 			}
 		}
 	}
@@ -46,12 +46,12 @@ class PageRank {
 
 
 class WebSearch {
- 		WebSearch(PageRank p, String f) {
+	WebSearch(PageRank p, String f) {
 
- 		}
- 		int iAmFeelingLucky() {
- 				return 0;
- 		}
+	}
+	int iAmFeelingLucky() {
+		return 0;
+	}
 }
 
 
@@ -66,9 +66,9 @@ public class Solution {
 		// and build the Digraph
 		Digraph d = new Digraph(vertices);
 		for (int i = 0; i <= vertices; i++) {
-			String[] s=scan.nextLine().split(" ");
-			for(int j=1;j<s.length;j++) {
-				d.addEdge(Integer.parseInt(s[0]),Integer.parseInt(s[j]));
+			String[] s = scan.nextLine().split(" ");
+			for (int j = 1; j < s.length; j++) {
+				d.addEdge(Integer.parseInt(s[0]), Integer.parseInt(s[j]));
 			}
 		}
 
@@ -83,16 +83,16 @@ public class Solution {
 			}
 
 		}
-		
+
 		// Create page rank object and pass the Digraph ``object to the constructor
-		PageRank p= new PageRank(d);
+		PageRank p = new PageRank(d);
 		// pageRankint the page rank object
 		System.out.println(p);
 		// This part is only for the final test case
 
 		// File path to the web content
 		String file = "WebContent.txt";
-		WebSearch w = new WebSearch(p,file);
+		WebSearch w = new WebSearch(p, file);
 		// instantiate web search object
 		// and pass the page rank object and the file path to the constructor
 		// read the search queries from std in
