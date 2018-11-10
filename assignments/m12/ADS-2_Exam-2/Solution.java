@@ -1,5 +1,7 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 public class Solution {
+
 
 	public static void main(String[] args) {
 		// Self loops are not allowed...
@@ -23,39 +25,60 @@ public class Solution {
 			System.out.println(graph);
 			break;
 
-		case "DirectedPaths":
-			// Handle the case of DirectedPaths, where two integers are given.
+		case "DirectedpathVias":
+			// Handle the case of DirectedpathVias, where two integers are given.
 			// First is the source and second is the destination.
-			// If the path exists print the distance between them.
-			// Other wise print "No Path Found."
+			// If the pathVia exists print the distance between them.
+			// Other wise print "No pathVia Found."
 			int source = scan.nextInt();
 			int destination = scan.nextInt();
 			d = new DijkstraUndirectedSP(graph, source);
 			if ((d.distTo(destination)) == Double.POSITIVE_INFINITY) {
-				System.out.println("No Path Found.");
+				System.out.println("No path Found.");
 			} else {
 				System.out.println(d.distTo(destination));
 			}
 			break;
-		case "ViaPaths":
-			// Handle the case of ViaPaths, where three integers are given.
-			// First is the source and second is the via is the one where path should pass throuh.
+		case "ViapathVias":
+			// Handle the case of ViapathVias, where three integers are given.
+			// First is the source and second is the via is the one where pathVia should pass throuh.
 			// third is the destination.
-			// If the path exists print the distance between them.
-			// Other wise print "No Path Found."
+			// If the pathVia exists print the distance between them.
+			// Other wise print "No pathVia Found."
 			source =scan.nextInt();
 			int via= scan.nextInt();
 			destination= scan.nextInt();
 			d = new DijkstraUndirectedSP(graph, source);
 			v= new DijkstraUndirectedSP(graph, via);
 			if((d.distTo(via)) == Double.POSITIVE_INFINITY || (v.distTo(destination)) == Double.POSITIVE_INFINITY) {
-				System.out.println("No Path Found.");
+				System.out.println("No path Found.");
 			} else {
 
 				System.out.println(d.distTo(via)+v.distTo(destination));
-				System.out.print(d.pathTo(via));
-				System.out.print(v.pathTo(destination));
+				ArrayList<Integer> pathVia = new ArrayList<>();
+				pathVia.add(source);
+                for (Edge e : d.pathTo(via)) {
+                    int tem = e.either();
+                    if (!pathVia.contains(tem)) {
+                        pathVia.add(tem);
+                    }
+                    if (!pathVia.contains(e.other(tem))) {
+                        pathVia.add(e.other(tem));
+                }
+                for (Edge a : v.pathTo(destination)) {
+                    int temp = a.either();
+                    if (!pathVia.contains(temp)) {
+                    	pathVia.add(temp);
+                    }
+                    if (!pathVia.contains(a.other(temp))) {
+                        pathVia.add(a.other(temp));
+                    }
+                }
+				String out = pathVia.toString().replaceAll(",", "");
+                out = out.substring(1, out.length() - 1);
+                System.out.println(out);
 			}
+		}
 			break;
 
 		default:
