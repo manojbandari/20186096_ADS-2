@@ -93,6 +93,7 @@ public class DijkstraUndirectedSP {
         Stack<Edge> path = new Stack<Edge>();
         int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
+            System.out.println(e);
             path.push(e);
             x = e.other(x);
         }

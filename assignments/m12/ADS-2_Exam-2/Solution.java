@@ -16,6 +16,7 @@ public class Solution {
 		}
 		String caseToGo = scan.nextLine();
 		DijkstraUndirectedSP d;
+		DijkstraUndirectedSP v;
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
@@ -46,10 +47,14 @@ public class Solution {
 			int via= scan.nextInt();
 			destination= scan.nextInt();
 			d = new DijkstraUndirectedSP(graph, source);
-			if((d.distTo(via)) == Double.POSITIVE_INFINITY &&(d.distTo(destination)) == Double.POSITIVE_INFINITY) {
+			v= new DijkstraUndirectedSP(graph, via);
+			if((d.distTo(via)) == Double.POSITIVE_INFINITY || (v.distTo(destination)) == Double.POSITIVE_INFINITY) {
 				System.out.println("No Path Found.");
 			} else {
-				System.out.println(d.distTo(destination));
+
+				System.out.println(d.distTo(via)+v.distTo(destination));
+				System.out.print(d.pathTo(via));
+				System.out.print(v.pathTo(destination));
 			}
 			break;
 
