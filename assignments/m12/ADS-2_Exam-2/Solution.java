@@ -25,7 +25,7 @@ public class Solution {
 			System.out.println(graph);
 			break;
 
-		case "Directedpaths":
+		case "DirectedPaths":
 			// Handle the case of Directedpaths, where two integers are given.
 			// First is the source and second is the destination.
 			// If the pathVia exists print the distance between them.
@@ -39,7 +39,7 @@ public class Solution {
 				System.out.println(d.distTo(destination));
 			}
 			break;
-		case "Viapaths":
+		case "ViaPaths":
 			// Handle the case of Viapaths, where three integers are given.
 			// First is the source and second is the via is the one where pathVia should pass throuh.
 			// third is the destination.
