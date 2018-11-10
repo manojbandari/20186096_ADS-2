@@ -7,11 +7,10 @@ public class Solution {
 		// Take the Graph input here...
 		Scanner scan = new Scanner(System.in);
 		int vertices = scan.nextInt();
-		int edges = scan.nextInt();
+		int edges = scan.nextInt();System.out.println(edges);
 		EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
 		for(int i=0;i<edges;i++) {
 			String[] directions= scan.nextLine().split(" ");
-			System.out.println(directions[0]);
 			graph.addEdge(new Edge(Integer.parseInt(directions[0]), Integer.parseInt(directions[1]), Double.parseDouble(directions[2])));
 		}
 		String caseToGo = scan.nextLine();
