@@ -74,9 +74,9 @@ public class Solution {
                         pathVia.add(a.other(temp));
                     }
                 }
-				String out = pathVia.toString().replaceAll(",", "");
-                out = out.substring(1, out.length() - 1);
-                System.out.println(out);
+				String output = pathVia.toString().replaceAll(",", "");
+                output = output.substring(1, output.length() - 1);
+                System.out.println(output);
 			}
 		}
 			break;
