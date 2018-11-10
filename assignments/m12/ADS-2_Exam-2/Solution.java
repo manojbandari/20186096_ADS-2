@@ -42,7 +42,15 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
-			System.out.println("No Path Found.");
+			source =scan.nextInt();
+			int via= scan.nextInt();
+			destination= scan.nextInt();
+			d = new DijkstraUndirectedSP(graph, source);
+			if((d.distTo(via)) == Double.POSITIVE_INFINITY &&(d.distTo(destination)) == Double.POSITIVE_INFINITY) {
+				System.out.println("No Path Found.");
+			} else {
+				System.out.println(d.distTo(destination));
+			}
 			break;
 
 		default:
