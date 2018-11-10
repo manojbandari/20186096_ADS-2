@@ -34,7 +34,7 @@ public class Solution {
 			int destination = scan.nextInt();
 			d = new DijkstraUndirectedSP(graph, source);
 			if ((d.distTo(destination)) == Double.POSITIVE_INFINITY) {
-				System.out.println("No path Found.");
+				System.out.println("No Path Found.");
 			} else {
 				System.out.println(d.distTo(destination));
 			}
@@ -51,7 +51,7 @@ public class Solution {
 			d = new DijkstraUndirectedSP(graph, source);
 			v= new DijkstraUndirectedSP(graph, via);
 			if((d.distTo(via)) == Double.POSITIVE_INFINITY || (v.distTo(destination)) == Double.POSITIVE_INFINITY) {
-				System.out.println("No path Found.");
+				System.out.println("No Path Found.");
 			} else {
 
 				System.out.println(d.distTo(via)+v.distTo(destination));
