@@ -26,8 +26,6 @@ public class Solution {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
-			
-			
 			System.out.println("No Path Found.");
 			break;
 
@@ -37,6 +35,7 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			System.out.println("No Path Found.");
 			break;
 
 		default:
