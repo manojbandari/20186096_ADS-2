@@ -277,7 +277,7 @@ Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:6:33: Parameter args should be final. [FinalParameters]
-[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:15:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:15:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:15:26: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:15:27: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:15:29: ';' is not followed by whitespace. [WhitespaceAfter]
@@ -297,13 +297,14 @@ Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:50:36: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:52:26: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:53: Line is longer than 80 characters (found 128). [LineLength]
-[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:53:27: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:57: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:57:65: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:57:66: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:77: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:53:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:56: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:56:65: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:56:66: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:76: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:78: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 31 errors.
+Checkstyle ends with 32 errors.
 Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

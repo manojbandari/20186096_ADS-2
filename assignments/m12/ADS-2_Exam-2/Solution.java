@@ -53,7 +53,6 @@ public class Solution {
 			if((d.distTo(via)) == Double.POSITIVE_INFINITY || (v.distTo(destination)) == Double.POSITIVE_INFINITY) {
 				System.out.println("No Path Found.");
 			} else {
-
 				System.out.println(d.distTo(via)+v.distTo(destination));
 				ArrayList<Integer> pathVia = new ArrayList<>();
 				pathVia.add(source);
@@ -75,8 +74,8 @@ public class Solution {
                     }
                 }
 				String output = pathVia.toString().replaceAll(",", "");
-                output = output.substring(1, output.length() - 1);
-                System.out.println(output);
+                System.out.println(output.substring(1, output.length() - 1));
+                
 			}
 		}
 			break;
