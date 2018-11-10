@@ -125,8 +125,8 @@ Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:14:44: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:15: Line is longer than 80 characters (found 149). [LineLength]
 [ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:25: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:32: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\20186096_ADS-2\assignments\m12\ADS-2_Exam-2\Solution.java:34: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
 Checkstyle ends with 18 errors.
 Starting audit...
