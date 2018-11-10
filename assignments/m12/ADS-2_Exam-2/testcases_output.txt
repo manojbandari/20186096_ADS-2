@@ -9,7 +9,6 @@ Expected Output:
 5:
 
 Your Output: 
-6
 Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
@@ -32,7 +31,6 @@ Expected Output:
 9: 7-9 157.00000  2-9 237.00000
 
 Your Output: 
-11
 Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
@@ -45,7 +43,6 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-6
 Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
@@ -58,7 +55,6 @@ Expected Output:
 370.0
 
 Your Output: 
-10
 Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
@@ -71,7 +67,6 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-6
 Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
@@ -85,7 +80,6 @@ Expected Output:
 5 2 4 0 7 1
 
 Your Output: 
-10
 Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
