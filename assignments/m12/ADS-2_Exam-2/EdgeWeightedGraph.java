@@ -149,6 +149,17 @@ public class EdgeWeightedGraph {
         }
         return list;
     }
+    public boolean isConnected(int source, int destination) {
+        boolean flag= false;
+        for(int v=source; v <= destination; v++) {
+            for(Edge e: adj(v)) {
+                if(e.other(v)> v) {
+                    flag= true;
+                }
+            }
+        }
+        return flag;
+    }
 
     /**
      * Returns a string representation of the edge-weighted graph.

@@ -15,6 +15,7 @@ public class Solution {
 			graph.addEdge(new Edge(Integer.parseInt(directions[0]), Integer.parseInt(directions[1]), Double.parseDouble(directions[2])));
 		}
 		String caseToGo = scan.nextLine();
+		DijkstraUndirectedSP d;
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
@@ -26,9 +27,15 @@ public class Solution {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
-			System.out.println("No Path Found.");
+			int source = scan.nextInt();
+			int destination = scan.nextInt();
+			d = new DijkstraUndirectedSP(graph, source);
+			if ((d.distTo(destination)) == Double.POSITIVE_INFINITY) {
+				System.out.println("No Path Found.");
+			} else {
+				System.out.println(d.distTo(destination));
+			}
 			break;
-
 		case "ViaPaths":
 			// Handle the case of ViaPaths, where three integers are given.
 			// First is the source and second is the via is the one where path should pass throuh.
