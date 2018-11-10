@@ -8,6 +8,7 @@ public class Solution {
 		Scanner scan = new Scanner(System.in);
 		int vertices = scan.nextInt();
 		int edges = scan.nextInt();
+		scan.nextLine();
 		EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
 		for(int i=0;i<edges;i++) {
 			String[] directions= scan.nextLine().split(" ");
