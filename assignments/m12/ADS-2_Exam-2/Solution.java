@@ -25,11 +25,11 @@ public class Solution {
 			System.out.println(graph);
 			break;
 
-		case "DirectedpathVias":
-			// Handle the case of DirectedpathVias, where two integers are given.
+		case "Directedpaths":
+			// Handle the case of Directedpaths, where two integers are given.
 			// First is the source and second is the destination.
 			// If the pathVia exists print the distance between them.
-			// Other wise print "No pathVia Found."
+			// Other wise print "No path Found."
 			int source = scan.nextInt();
 			int destination = scan.nextInt();
 			d = new DijkstraUndirectedSP(graph, source);
@@ -39,8 +39,8 @@ public class Solution {
 				System.out.println(d.distTo(destination));
 			}
 			break;
-		case "ViapathVias":
-			// Handle the case of ViapathVias, where three integers are given.
+		case "Viapaths":
+			// Handle the case of Viapaths, where three integers are given.
 			// First is the source and second is the via is the one where pathVia should pass throuh.
 			// third is the destination.
 			// If the pathVia exists print the distance between them.
