@@ -23,3 +23,4 @@ final class Solution {
         System.out.println(String.format("%.5f", mst.weight()));
     }
 }
+
