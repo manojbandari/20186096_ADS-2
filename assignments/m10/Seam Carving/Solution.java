@@ -6,8 +6,14 @@ public class Solution {
     public static void printEnergies(String fileName) {
         Picture picture = new Picture(fileName);
         StdOut.printf("image is %d pixels wide by %d pixels high.\n", picture.width(), picture.height());
-
+        // SeamCarver sc = new SeamCarver();
+        // try {
         SeamCarver sc = new SeamCarver(picture);
+        // }
+        // catch (Exception e) {
+        // System.out.println(e.getMessage());
+
+        // }
 
         StdOut.printf("Printing energy calculated for each pixel.\n");
 
@@ -123,7 +129,7 @@ public class Solution {
                 break;
             }
         } catch (Exception ex) {
-            System.out.println(ex.getMessage());
+            System.out.println("picture is null");
         }
     }
 }
