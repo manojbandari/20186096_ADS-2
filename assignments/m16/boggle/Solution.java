@@ -47,11 +47,13 @@ public class Solution {
 				dictionaryName = StdIn.readLine();
 				in = new In("/Files/" + dictionaryName);
 				dictionary = in.readAllStrings();
-				solver = new BoggleSolver(dictionary);
 				board = null;
-				// if(board.equals(null)) {
-					// System.out.println("board is null");
-				// }
+				if(board==null) {
+					System.out.println("board is null");
+					break;
+				}
+				solver = new BoggleSolver(dictionary);
+				
 				score = 0;
 				HashMap<String, Integer> ent = solver.getAllValidWords(board);
 
