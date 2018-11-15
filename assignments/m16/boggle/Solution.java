@@ -43,13 +43,16 @@ public class Solution {
 			StdOut.println("Score = " + score);
 			break;
 
-		/*default:
+		default:
 			try {
 				dictionaryName = StdIn.readLine();
 				in = new In("/Files/" + dictionaryName);
 				dictionary = in.readAllStrings();
 				solver = new BoggleSolver(dictionary);
 				board = null;
+				if(board==null) {
+					System.out.println("board is null");
+				}
 				score = 0;
 				HashMap<String, Integer> ent = solver.getAllValidWords(board);
 
@@ -60,7 +63,7 @@ public class Solution {
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());
 			}
-			break;*/
+			break;
 		}
 
 	}
