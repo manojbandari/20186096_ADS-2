@@ -32,14 +32,6 @@ public class Solution {
 			HashMap<String, Integer> entry = solver.getAllValidWords(board);
 			for (String variableName : entry.keySet())
 				score += solver.scoreOf(variableName);
-          
-    		/*for(int i=0;i<entry.size();i++)
-    			score += solver.scoreOf();
-    		
-    		*/
-			/*for (String word : solver.getAllValidWords(board)) {
-				score += solver.scoreOf(word);
-			}*/
 			StdOut.println("Score = " + score);
 			break;
 
@@ -58,7 +50,11 @@ public class Solution {
 				/*for (String word : solver.getAllValidWords(board)) {
 					score += solver.scoreOf(word);
 				}*/
+				if(board==null) 
+					System.out.println("board is null");
+				else {
 					StdOut.println("Score = " + score);
+				}
 				
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());
