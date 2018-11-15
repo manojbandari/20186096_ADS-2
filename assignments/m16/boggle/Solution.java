@@ -43,7 +43,7 @@ public class Solution {
 			StdOut.println("Score = " + score);
 			break;
 
-		default:
+		/*default:
 			try {
 				dictionaryName = StdIn.readLine();
 				in = new In("/Files/" + dictionaryName);
@@ -55,15 +55,12 @@ public class Solution {
 
 				for (String variableName : ent.keySet())
 					score += solver.scoreOf(variableName);
-				/*for (String word : solver.getAllValidWords(board)) {
-					score += solver.scoreOf(word);
-				}*/
-					//StdOut.println("Score = " + score);
+					StdOut.println("Score = " + score);
 				
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());
 			}
-			break;
+			break;*/
 		}
 
 	}
