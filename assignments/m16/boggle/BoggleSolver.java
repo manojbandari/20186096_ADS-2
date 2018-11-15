@@ -17,12 +17,12 @@ public class BoggleSolver {
         }
        validWords = new HashMap<String,Integer>();
 
-        int r = board.rows();
-        int c = board.cols();
+        int row = board.rows();
+        int col = board.cols();
 
-        for (int i = 0; i < r; i++) {
-            for (int j = 0; j < c; j++) {
-                boolean[][] visited = new boolean[r][c];
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                boolean[][] visited = new boolean[row][col];
                 collect(board, i, j, visited, "", validWords);
             }
         }
