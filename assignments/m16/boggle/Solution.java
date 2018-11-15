@@ -40,7 +40,11 @@ public class Solution {
 			/*for (String word : solver.getAllValidWords(board)) {
 				score += solver.scoreOf(word);
 			}*/
-			StdOut.println("Score = " + score);
+			// StdOut.println("Score = " + score);
+			if (board == null) {
+					System.out.println("board is null");
+
+				} else StdOut.println("Score = " + score);
 			break;
 
 		default:
