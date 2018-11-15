@@ -2,7 +2,7 @@ public class BoggleSolver {
 	// Initializes the data structure using the given array of strings as the dictionary.
 	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
 	public BoggleSolver(String[] dictionary) {
-
+		
 	}
 
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
