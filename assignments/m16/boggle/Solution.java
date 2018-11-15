@@ -50,16 +50,18 @@ public class Solution {
 				dictionary = in.readAllStrings();
 				solver = new BoggleSolver(dictionary);
 				board = null;
-				if(board.equals("null")) {
-					System.out.println("board is null");
-					break;
-				}
+				// if(board.equals(null)) {
+					// System.out.println("board is null");
+				// }
 				score = 0;
 				HashMap<String, Integer> ent = solver.getAllValidWords(board);
 
 				for (String variableName : ent.keySet())
 					score += solver.scoreOf(variableName);
-					StdOut.println("Score = " + score);
+				if (board == null) {
+					System.out.println("board is null");
+
+				} else StdOut.println("Score = " + score);
 				
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());
