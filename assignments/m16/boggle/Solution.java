@@ -44,7 +44,6 @@ public class Solution {
 			break;
 
 		default:
-			try {
 				dictionaryName = StdIn.readLine();
 				in = new In("/Files/" + dictionaryName);
 				dictionary = in.readAllStrings();
@@ -62,10 +61,6 @@ public class Solution {
 					System.out.println("board is null");
 
 				} else StdOut.println("Score = " + score);
-				
-			} catch (Exception ex) {
-				System.out.println(ex.getMessage());
-			}
 			break;
 		}
 

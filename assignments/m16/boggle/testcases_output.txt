@@ -235,6 +235,15 @@ Expected Output:
 board is null
 
 Your Output: 
--20
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -20
+	at TrieSET.add(TrieSET.java:79)
+	at TrieSET.add(TrieSET.java:79)
+	at TrieSET.add(TrieSET.java:79)
+	at TrieSET.add(TrieSET.java:79)
+	at TrieSET.add(TrieSET.java:79)
+	at TrieSET.add(TrieSET.java:79)
+	at TrieSET.add(TrieSET.java:68)
+	at BoggleSolver.<init>(BoggleSolver.java:10)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
