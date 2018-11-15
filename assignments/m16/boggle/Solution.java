@@ -32,6 +32,8 @@ public class Solution {
 			HashMap<String, Integer> entry = solver.getAllValidWords(board);
 			for (String variableName : entry.keySet())
 				score += solver.scoreOf(variableName);
+          
+
 			StdOut.println("Score = " + score);
 			break;
 
@@ -43,6 +45,8 @@ public class Solution {
 				solver = new BoggleSolver(dictionary);
 				board = null;
 				score = 0;
+				if(board==null) 
+					System.out.println("board is null");
 				HashMap<String, Integer> ent = solver.getAllValidWords(board);
 
 				for (String variableName : ent.keySet())
@@ -50,12 +54,8 @@ public class Solution {
 				/*for (String word : solver.getAllValidWords(board)) {
 					score += solver.scoreOf(word);
 				}*/
-				if(board==null) 
-					System.out.println("board is null");
-				else {
-					StdOut.println("Score = " + score);
-				}
 				
+					StdOut.println("Score = " + score);
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());
 			}

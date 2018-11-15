@@ -820,17 +820,18 @@ Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:30: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:32: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:33: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:46: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:48: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:50: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:53: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:53: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:53:35: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:53:41: '==' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:53:43: '==' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:58: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:35: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:48: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:48: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:48:35: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:48:41: '==' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:48:43: '==' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:50: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:52: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:54: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:57: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 17 errors.
 Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m16\boggle\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\20186096_ADS-2\assignments\m16\boggle\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
