@@ -822,13 +822,12 @@ Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:33: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:35: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:38: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:47: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:61: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:63: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:68: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:69: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:57: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:59: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:64: 'else' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:65: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m16\boggle\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\20186096_ADS-2\assignments\m16\boggle\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
