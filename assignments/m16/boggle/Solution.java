@@ -50,7 +50,7 @@ public class Solution {
 				dictionary = in.readAllStrings();
 				solver = new BoggleSolver(dictionary);
 				board = null;
-				if(board==null) {
+				if(board.equals("null")) {
 					System.out.println("board is null");
 				}
 				score = 0;
