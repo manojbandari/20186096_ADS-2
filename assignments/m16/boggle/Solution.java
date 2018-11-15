@@ -45,6 +45,7 @@ public class Solution {
 				score = 0;
 				if(board==null) {
 				System.out.println("board is null");
+				return;
 				}
 				for (String word : solver.getAllValidWords(board)) {
 					score += solver.scoreOf(word);
