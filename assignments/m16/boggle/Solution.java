@@ -27,9 +27,6 @@ public class Solution {
 			BoggleSolver solver = new BoggleSolver(dictionary);
 
 			String boardName = StdIn.readLine();
-			if(boardName.equals("")) {
-				System.out.println("board is null");
-			}
 			BoggleBoard board = new BoggleBoard("/Files/" + boardName);
 			int score = 0;
 			for (String word : solver.getAllValidWords(board)) {
@@ -46,6 +43,9 @@ public class Solution {
 				solver = new BoggleSolver(dictionary);
 				board = null;
 				score = 0;
+				if(board==null) {
+				System.out.println("board is null");
+				}
 				for (String word : solver.getAllValidWords(board)) {
 					score += solver.scoreOf(word);
 				}
