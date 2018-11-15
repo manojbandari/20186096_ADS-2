@@ -43,14 +43,14 @@ public class Solution {
 				solver = new BoggleSolver(dictionary);
 				board = null;
 				score = 0;
-				if(board==null) {
-				System.out.println("board is null");
-				return;
-				}
 				for (String word : solver.getAllValidWords(board)) {
 					score += solver.scoreOf(word);
 				}
-				StdOut.println("Score = " + score);
+				if(board==null) {
+					System.out.println("board is null");
+				} else {
+					StdOut.println("Score = " + score);
+				}
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());
 			}

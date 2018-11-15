@@ -765,10 +765,10 @@ Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:6: Class Solution should be declared as final. [FinalClass]
 [ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:30: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:46:35: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:46:41: '==' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:46:43: '==' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:50: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:46: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:49:35: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:49:41: '==' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m16\boggle\Solution.java:49:43: '==' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 9 errors.
 Starting audit...
