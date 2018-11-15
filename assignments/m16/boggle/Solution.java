@@ -33,7 +33,13 @@ public class Solution {
 			for (String variableName : entry.keySet())
 				score += solver.scoreOf(variableName);
           
-
+    		/*for(int i=0;i<entry.size();i++)
+    			score += solver.scoreOf();
+    		
+    		*/
+			/*for (String word : solver.getAllValidWords(board)) {
+				score += solver.scoreOf(word);
+			}*/
 			StdOut.println("Score = " + score);
 			break;
 
@@ -45,8 +51,6 @@ public class Solution {
 				solver = new BoggleSolver(dictionary);
 				board = null;
 				score = 0;
-				if(board==null) 
-					System.out.println("board is null");
 				HashMap<String, Integer> ent = solver.getAllValidWords(board);
 
 				for (String variableName : ent.keySet())
@@ -54,8 +58,8 @@ public class Solution {
 				/*for (String word : solver.getAllValidWords(board)) {
 					score += solver.scoreOf(word);
 				}*/
-				
 					StdOut.println("Score = " + score);
+				
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());
 			}
