@@ -52,6 +52,7 @@ public class Solution {
 				board = null;
 				if(board.equals("null")) {
 					System.out.println("board is null");
+					break;
 				}
 				score = 0;
 				HashMap<String, Integer> ent = solver.getAllValidWords(board);
