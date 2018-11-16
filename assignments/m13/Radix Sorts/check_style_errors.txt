@@ -1,0 +1,13 @@
+Starting audit...
+[ERROR] F:\20186096_ADS-2\assignments\m13\Radix Sorts\LSD.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\20186096_ADS-2\assignments\m13\Radix Sorts\LSD.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\20186096_ADS-2\assignments\m13\Radix Sorts\LSD.java:19: First sentence should end with a period. [JavadocStyle]
+[ERROR] F:\20186096_ADS-2\assignments\m13\Radix Sorts\LSD.java:22: Expected @return tag. [JavadocMethod]
+[ERROR] F:\20186096_ADS-2\assignments\m13\Radix Sorts\LSD.java:22:52: Expected @param tag for 'ar'. [JavadocMethod]
+[ERROR] F:\20186096_ADS-2\assignments\m13\Radix Sorts\LSD.java:22:66: Expected @param tag for 'n'. [JavadocMethod]
+Audit done.
+Checkstyle ends with 6 errors.
+Starting audit...
+[ERROR] F:\20186096_ADS-2\assignments\m13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
