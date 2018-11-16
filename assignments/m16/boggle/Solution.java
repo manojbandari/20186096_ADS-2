@@ -1,5 +1,5 @@
 import java.util.Arrays;
-import java.util.HashMap;
+
 /**
  * Class for solution.
  */
@@ -29,17 +29,9 @@ public class Solution {
 			String boardName = StdIn.readLine();
 			BoggleBoard board = new BoggleBoard("/Files/" + boardName);
 			int score = 0;
-			HashMap<String, Integer> entry = solver.getAllValidWords(board);
-			for (String variableName : entry.keySet())
-				score += solver.scoreOf(variableName);
-          
-    		/*for(int i=0;i<entry.size();i++)
-    			score += solver.scoreOf();
-    		
-    		*/
-			/*for (String word : solver.getAllValidWords(board)) {
+			for (String word : solver.getAllValidWords(board)) {
 				score += solver.scoreOf(word);
-			}*/
+			}
 			StdOut.println("Score = " + score);
 			break;
 
@@ -51,11 +43,9 @@ public class Solution {
 				solver = new BoggleSolver(dictionary);
 				board = null;
 				score = 0;
-				
-				HashMap<String, Integer> ent = solver.getAllValidWords(board);
-
-                for (String variableName : ent.keySet())
-                    score += solver.scoreOf(variableName);
+				for (String word : solver.getAllValidWords(board)) {
+					score += solver.scoreOf(word);
+				}
 				StdOut.println("Score = " + score);
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());

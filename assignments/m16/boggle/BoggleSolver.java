@@ -11,7 +11,7 @@ public class BoggleSolver {
 		}
 	}
 	// Returns the map of all valid words in the given Boggle board, as an Iterable.
-	public HashMap<String,Integer> getAllValidWords(BoggleBoard board) {
+	public Iterable<String> getAllValidWords(BoggleBoard board) {
 		if (board == null) {
             throw new NullPointerException("board is null");
         }
@@ -26,7 +26,7 @@ public class BoggleSolver {
                 collect(board, i, j, visited, "", validWords);
             }
         }
-        return validWords;
+        return validWords.keySet();
     }
     private void collect(BoggleBoard board, int row, int col, boolean[][] visited, String prefix, HashMap<String,Integer> map) {
         if (visited[row][col]) {
