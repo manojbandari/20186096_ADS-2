@@ -1,21 +1,21 @@
 import java.util.HashMap;
 public class BoggleSolver {
-	// Initializes the data structure using the given array of strings as the dictionary.
-	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
-	private TrieSET listOfWords;
-	private HashMap<String,Integer> validWords;
-	public BoggleSolver(String[] dictionary) {
-		listOfWords=new TrieSET();
-		for(String word : dictionary) {
-			listOfWords.add(word);
-		}
-	}
-	// Returns the map of all valid words in the given Boggle board, as an Iterable.
-	public Iterable<String> getAllValidWords(BoggleBoard board) {
-		if (board == null) {
+    // Initializes the data structure using the given array of strings as the dictionary.
+    // (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
+    private TrieSET listOfWords;
+    private HashMap<String, Integer> validWords;
+    public BoggleSolver(String[] dictionary) {
+        listOfWords = new TrieSET();
+        for (String word : dictionary) {
+            listOfWords.add(word);
+        }
+    }
+    // Returns the map of all valid words in the given Boggle board, as an Iterable.
+    public Iterable<String> getAllValidWords(BoggleBoard board) {
+        if (board == null) {
             throw new NullPointerException("board is null");
         }
-       validWords = new HashMap<String,Integer>();
+        validWords = new HashMap<String, Integer>();
 
         int row = board.rows();
         int col = board.cols();
@@ -28,7 +28,7 @@ public class BoggleSolver {
         }
         return validWords.keySet();
     }
-    private void collect(BoggleBoard board, int row, int col, boolean[][] visited, String prefix, HashMap<String,Integer> map) {
+    private void collect(BoggleBoard board, int row, int col, boolean[][] visited, String prefix, HashMap<String, Integer> map) {
         if (visited[row][col]) {
             return;
         }
@@ -47,16 +47,16 @@ public class BoggleSolver {
         }
 
         if (word.length() > 2 && listOfWords.contains(word)) {
-            if(word.length()>2 && word.length()<5)
-            	map.put(word,1);
-            if(word.length()==5)
-            	map.put(word,2);
-            if(word.length()==6)
-            	map.put(word,3);
-            if(word.length()==7)
-            	map.put(word,5);
-            if(word.length()>=8)
-            	map.put(word,11);
+            if (word.length() > 2 && word.length() < 5)
+                map.put(word, 1);
+            if (word.length() == 5)
+                map.put(word, 2);
+            if (word.length() == 6)
+                map.put(word, 3);
+            if (word.length() == 7)
+                map.put(word, 5);
+            if (word.length() >= 8)
+                map.put(word, 11);
 
         }
 
@@ -75,14 +75,14 @@ public class BoggleSolver {
         }
 
         visited[row][col] = false;
-    
-	}
-	// Returns the score of the given word if it is in the dictionary, zero otherwise.
-	// (You can assume the word contains only the uppercase letters A through Z.)
-	public int scoreOf(String word) {
-		if (listOfWords.contains(word)) {
-			return validWords.get(word);
-		}
-		return 0;
-	}
+
+    }
+    // Returns the score of the given word if it is in the dictionary, zero otherwise.
+    // (You can assume the word contains only the uppercase letters A through Z.)
+    public int scoreOf(String word) {
+        if (listOfWords.contains(word)) {
+            return validWords.get(word);
+        }
+        return 0;
+    }
 }
