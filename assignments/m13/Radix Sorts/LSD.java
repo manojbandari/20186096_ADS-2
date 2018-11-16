@@ -35,7 +35,7 @@ class LSD {
 			}
 
 			for (int m = 0; m < len; m++) {
-				aux[count[ar[i].charAt(i)]++] = ar[i];
+				aux[count[ar[m].charAt(i)]++] = ar[m];
 			}
 			for (int x = 0; x < len; x++) {
 				ar[x] = aux[x];
