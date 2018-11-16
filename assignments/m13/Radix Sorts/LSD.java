@@ -27,7 +27,7 @@ class LSD {
 			int[] count = new int[r + 1];
 
 			for (int j = 0; j < len; j++) {
-				count[ar[i].charAt(j) + 1]++;
+				count[ar[j].charAt(i) + 1]++;
 			}
 
 			for (int k = 0; k < r; k++) {
