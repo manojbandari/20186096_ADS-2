@@ -44,25 +44,22 @@ public class Solution {
 			break;
 
 		default:
-				dictionaryName = StdIn.readLine();
+			try {
+				dictionaryName = caseType;
 				in = new In("/Files/" + dictionaryName);
 				dictionary = in.readAllStrings();
-				board = null;
-				if(board==null) {
-					System.out.println("board is null");
-					break;
-				}
 				solver = new BoggleSolver(dictionary);
-				
+				board = null;
 				score = 0;
+				
 				HashMap<String, Integer> ent = solver.getAllValidWords(board);
 
-				for (String variableName : ent.keySet())
-					score += solver.scoreOf(variableName);
-				if (score < 0) {
-					System.out.println("board is null");
-
-				} else StdOut.println("Score = " + score);
+                for (String variableName : ent.keySet())
+                    score += solver.scoreOf(variableName);
+				StdOut.println("Score = " + score);
+			} catch (Exception ex) {
+				System.out.println(ex.getMessage());
+			}
 			break;
 		}
 

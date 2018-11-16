@@ -1,5 +1,6 @@
 import java.util.Iterator;
 
+
 /**
  *  The <tt>TrieSET</tt> class represents an ordered set of strings over
  *  the extended ASCII alphabet.
@@ -272,3 +273,4 @@ public class TrieSET implements Iterable<String> {
         StdOut.println(set.hasPrefix("SHOR"));
     }
 }
+
