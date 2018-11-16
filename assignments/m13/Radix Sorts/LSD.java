@@ -25,12 +25,15 @@ class LSD {
 		String[] aux = new String[len];
 		for (int i = n - 1; i >= 0; i--) {
 			int[] count = new int[r + 1];
+
 			for (int j = 0; j < len; j++) {
-				count[ar[i].charAt(i) + 1]++;
+				count[ar[i].charAt(j) + 1]++;
 			}
+
 			for (int k = 0; k < r; k++) {
 				count[k + 1] += count[k];
 			}
+
 			for (int m = 0; m < len; m++) {
 				aux[count[ar[i].charAt(i)]++] = ar[i];
 			}
