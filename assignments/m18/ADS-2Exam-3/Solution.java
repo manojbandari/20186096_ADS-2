@@ -93,7 +93,7 @@ public class Solution {
 		for(int i=0;i< words.length;i++) {
 			if(st.contains(words[i])||st.contains(words[i].toLowerCase())) {
 				int count=st.get(words[i].toLowerCase());
-				st.put(words[i],count+1);
+				st.put(words[i].toLowerCase(),count+1);
 			}
 			else {
 				st.put(words[i].toLowerCase(),1);
