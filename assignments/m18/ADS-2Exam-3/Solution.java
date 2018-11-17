@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 import java.io.*;
+import java.util.*;
 
 public class Solution {
 
@@ -106,6 +107,7 @@ public class Solution {
 
 class T9 {
 	TST t;
+	BinarySearchST<String, Integer> bst;
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		t =new TST();
@@ -118,7 +120,6 @@ class T9 {
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
 		return t.keysWithPrefix(prefix);
-		///return null;
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
@@ -129,7 +130,20 @@ class T9 {
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		return null;
+		 MaxPQ<Integer> frequencies = new MaxPQ<Integer>();
+        for (String each : words) {
+            frequencies.insert((Integer) t.get(each));
+        }
+        TreeSet<String> s = new TreeSet<String>();
+        for (int i = 0; i < k; i++) {
+            int value = frequencies.delMax();
+            for (String word : words) {
+                if (value == (Integer) t.get(word)) {
+                    s.add(word);
+                }
+            }
+        }
+        return s;
 	}
 
 	// final output
