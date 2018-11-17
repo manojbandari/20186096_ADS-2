@@ -1,43 +1,50 @@
 import java.util.Scanner;
 /**
- Solution class.
+ * class for Solution.
  */
 final class Solution {
     /**
-     * default constructor.
+     * Constructs the object.
      */
     private Solution() {
-      //unused.
+        //unused.
     }
     /**
-     * main method.
-     * @param args String.
+     * main.
+     *
+     * @param      args  The arguments
      */
     public static void main(final String[] args) {
         String[] words = loadWords();
         //Your code goes here...
-        // System.out.println(Arrays.toString(words));
-        TST tst = new TST();
-        Scanner sc = new Scanner(System.in);
-        String inp = sc.nextLine();
+         TST tst = new TST();
         for (int i = 0; i < words.length; i++) {
-            String[] tokens = new String[words[i].length()];
-            for (int j = 0; j < words[i].length(); j++) {
-                tokens[j] = words[i].substring(
-                    j, words[i].length());
-                tst.put(tokens[j], 0);
+            int n = words[i].length();
+            // string array of all the suffixes of the given word.
+            String[] suffixes = new String[n];
+            for (int j = 0; j < n; j++) {
+                suffixes[j] = words[i].substring(j, n);
+                tst.put(suffixes[j], 5);
+
             }
+
         }
-        System.out.println(tst.keysWithPrefix(inp));
+        Scanner sc = new Scanner(System.in);
+        // iterablr String of all the keys with prefix as given word.
+        Iterable<String> st = tst.keysWithPrefix(sc.nextLine());
+
+        for (String s : st) {
+            System.out.println(s.toString());
+        }
     }
-/**
- * loadwords method.
- * @return String array.
- */
+    /**
+     * Loads words.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static String[] loadWords() {
         In in = new In("/Files/dictionary-algs4.txt");
         String[] words = in.readAllStrings();
-        // System.out.println(words);
         return words;
     }
 }
