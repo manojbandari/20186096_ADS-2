@@ -1,7 +1,9 @@
+import java.util.Arrays;
+
 /**
  * Class for solution.
  */
-public final class Solution {
+public class Solution {
 
     /**
      * Constructs the object.
@@ -30,12 +32,14 @@ public final class Solution {
             for (String word : solver.getAllValidWords(board)) {
                 score += solver.scoreOf(word);
             }
+
             StdOut.println("Score = " + score);
+
             break;
 
         default:
             try {
-                dictionaryName = caseType;
+                dictionaryName = StdIn.readLine();
                 in = new In("/Files/" + dictionaryName);
                 dictionary = in.readAllStrings();
                 solver = new BoggleSolver(dictionary);
@@ -44,7 +48,8 @@ public final class Solution {
                 for (String word : solver.getAllValidWords(board)) {
                     score += solver.scoreOf(word);
                 }
-                StdOut.println("Score = " + score);
+                 StdOut.println("Score = " + score);
+                
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());
             }
@@ -53,4 +58,3 @@ public final class Solution {
 
     }
 }
-
