@@ -92,7 +92,7 @@ public class Solution {
 		String[] words = toReadFile(file);
 		for(int i=0;i< words.length;i++) {
 			if(st.contains(words[i])||st.contains(words[i].toLowerCase())) {
-				int count=st.get(words[i]);
+				int count=st.get(words[i].toLowerCase());
 				st.put(words[i],count+1);
 			}
 			else {

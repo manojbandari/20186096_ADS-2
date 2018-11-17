@@ -10,9 +10,14 @@ Expected Output:
 149
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.loadDictionary(Solution.java:95)
-	at Solution.main(Solution.java:15)
+50
+28
+135
+3
+94
+49
+45
+133
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -53,8 +58,7 @@ going
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.loadDictionary(Solution.java:95)
-	at Solution.main(Solution.java:24)
+	at Solution.main(Solution.java:27)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -123,8 +127,7 @@ seeking
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.loadDictionary(Solution.java:95)
-	at Solution.main(Solution.java:35)
+	at Solution.main(Solution.java:39)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -136,8 +139,7 @@ words
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.loadDictionary(Solution.java:95)
-	at Solution.main(Solution.java:51)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -190,7 +192,6 @@ keep
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.loadDictionary(Solution.java:95)
-	at Solution.main(Solution.java:66)
+	at Solution.main(Solution.java:71)
 ----------------------------------------
 
