@@ -180,12 +180,14 @@ Starting audit...
 Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
-[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:27:39: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:27:40: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:27:41: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:27:42: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:27:55: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:27:56: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:27:57: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:27:58: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\TST.java:9: Line is longer than 80 characters (found 84). [LineLength]
