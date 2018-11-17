@@ -180,10 +180,12 @@ Starting audit...
 Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
-[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:27:38: '5' is a magic number. [MagicNumber]
+[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:27:39: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:27:40: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:27:41: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\Solution.java:27:42: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\20186096_ADS-2\assignments\m14\Assignment-1\TST.java:9: Line is longer than 80 characters (found 84). [LineLength]
