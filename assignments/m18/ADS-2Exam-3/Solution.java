@@ -135,10 +135,13 @@ class T9 {
             frequencies.insert((Integer) t.get(each));
         }
         TreeSet<String> s = new TreeSet<String>();
+
+
         for (int i = 0; i < k; i++) {
             int value = frequencies.delMax();
             for (String word : words) {
                 if (value == (Integer) t.get(word)) {
+           
                     s.add(word);
                 }
             }

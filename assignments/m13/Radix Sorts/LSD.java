@@ -20,7 +20,7 @@ class LSD {
      * complexity O(2W(N+R)).
      *
      * @param      ar    The array
-     * @param      n     { parameter_description }
+     * @param      n     number of characterrs per string
      *
      * @return     { description_of_the_return_value }
      */

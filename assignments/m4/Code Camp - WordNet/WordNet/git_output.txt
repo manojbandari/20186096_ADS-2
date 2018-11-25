@@ -1,0 +1,7 @@
+warning: LF will be replaced by CRLF in assignments/m4/Code Camp - WordNet/WordNet/WordNet.java.
+The file will have its original line endings in your working directory.
+[master f32e4cb] "ads2_m4_a1_1: 15/15 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 8 files changed, 11 insertions(+), 10 deletions(-)
+ create mode 100644 assignments/m4/Code Camp - WordNet/WordNet/md5/score.txt
+ create mode 100644 assignments/m4/Code Camp - WordNet/WordNet/result/score.json
+error: failed to push some refs to 'https://github.com/manojbandari/20186096_ADS-2.git'

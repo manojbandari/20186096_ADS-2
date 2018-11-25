@@ -1,0 +1,7 @@
+[master 34ed8d1] "ads2_m7_a1_1: 6/6 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
+ 4 files changed, 4 insertions(+), 3 deletions(-)
+ create mode 100644 assignments/m7/1. MST/md5/score.txt
+ create mode 100644 assignments/m7/1. MST/result/score.json
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/manojbandari/20186096_ADS-2.git
+   dddcef9..34ed8d1  master -> master

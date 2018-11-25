@@ -1,0 +1,8 @@
+warning: LF will be replaced by CRLF in assignments/m10/Seam Carving/SeamCarver.java.
+The file will have its original line endings in your working directory.
+[master e991a71] "ads2_m10_a1_1: 9/9 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
+ 3 files changed, 3 insertions(+), 4 deletions(-)
+ rewrite assignments/m10/Seam Carving/result/score.json (82%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/manojbandari/20186096_ADS-2.git
+   c140cb6..e991a71  master -> master
